@@ -110,6 +110,7 @@ static void go_back_to_main(void)
         }
         buf[strcspn(buf, "\r\n")] = '\0'; /* strip newline */
     } while (!(buf[0] == 'b' || buf[0] == 'B') || buf[1] != '\0');
+    main_menu();
 }
 
 /* Return 1 if s is an optional [+/-] followed by one-or-more digits, else 0. */
@@ -135,5 +136,5 @@ static void menu_item_1(void){
 }
 
 static void menu_item_2(void){
-    select_item();
+    printf("hehe ^-^");
 }
